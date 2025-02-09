@@ -11,13 +11,13 @@
    }
    .menu__link{
     display: block;
-    padding: 10px;
+    padding: 15px;
     margin: 5px;
     background-color: #fefefe;
     color: rgb(14, 2, 2);
     text-decoration: none;
    }
-   .header__login{
+   .header__button{
     display: inline-block;
      padding: 10px;
      margin: 5px;
@@ -39,8 +39,10 @@
        }
        .header{
         display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
         justify-content: space-between;
         padding-top: 20px;
         padding-bottom: 20px;
        }
-    
+       
