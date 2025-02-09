@@ -7,8 +7,8 @@
     font-size: 16px;
     font-weight: 600;
 
-    background-color: #e2dbb8;
-    color: #fefefe;
+    background-color: #fefefe;
+    color: black;
 
     border: 0;
     border-radius: 8px;
@@ -18,8 +18,4 @@
 
     min-height: 60px;
     padding: 12px 20px;
-}
-.course__button--disable {
-    background-color: #fefefe;
-    color: cadetblue;
 }

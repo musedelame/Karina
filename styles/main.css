@@ -1,9 +1,9 @@
 .catalog__card{
     width: 350px;
     padding: 15px;
-    background-color: rgb(205, 38, 169);
-   color: black;
-    box-shadow: 1px 2px 20px 5px #d7d7d7;
+    background-color: #fefefe;
+    color: black;
+    box-shadow: 1px 2px 20px 5px #fefefe;
    }
    .catalog{
     margin: 0;

@@ -13,7 +13,7 @@
     display: block;
     padding: 10px;
     margin: 5px;
-    background-color: rgb(249, 59, 179);
+    background-color: #fefefe;
     color: rgb(14, 2, 2);
     text-decoration: none;
    }
@@ -21,7 +21,7 @@
     display: inline-block;
      padding: 10px;
      margin: 5px;
-     background-color: rgb(245, 78, 178);
+     background-color: #fefefe;
      color: rgb(0, 0, 0);
      text-decoration: none;
     }
