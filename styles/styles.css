@@ -10,3 +10,5 @@
 @import "footer.css";
 /* Подключение стилей относящихся к main */
 @import "main.css";
+/* Подключение адаптивности */
+@import "media.css";

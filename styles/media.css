@@ -1,0 +1,11 @@
+@media (max-width: 1024px) {
+.container {
+    max-width: 100%;
+}
+.catalog__card{
+    width: 300px;
+}
+.header__buttons{
+    margin-left: auto;
+}
+}

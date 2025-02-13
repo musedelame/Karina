@@ -87,5 +87,32 @@
     width: 100%;
     background-color: #ffffff;
     color: black;
-
+}
+.form__button:hover {
+    background-color: #fffff0;
+}
+.catalog__link {
+    text-decoration: none; 
+    color: rgb(0, 0, 0);
+    text-align: center;
+    transition: background-color 0.5s;
+}
+.catalog__links {
+    text-decoration: none; 
+    color: rgb(0, 0, 0);
+    text-align: right;
+    transition: background-color 0.5s;
+}
+.catalog__link:hover{
+    background-color: #fffff0;
+}
+.catalog__links:hover {
+    background-color: #fffff0;
+}
+.catalog__title {
+    text-align: center;
+    flex-grow: 1;
+}
+.about__button:hover {
+    background-color: #fffff0;
 }
