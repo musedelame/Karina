@@ -116,3 +116,11 @@
 .about__button:hover {
     background-color: #fffff0;
 }
+.catalog__item {
+    background-color: #fefefe;
+    border: none;
+    text-align: right;
+}
+.catalog__item-red {
+    color: red;
+}
