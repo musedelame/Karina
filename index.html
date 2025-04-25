@@ -34,7 +34,7 @@
         </nav>
         <div class="header__buttons">
             <button class="header__button button" type="button">ПОИСК</button>
-            <button class="header__button button" type="button">ВОЙТИ</button>
+            <button class="header__button button welcome__button" type="button">ВОЙТИ</button>
             <button class="header__button button" type="button">ИЗБРАННОЕ</button>
             <button class="header__button button" type="button">КОРЗИНА</button>
         </div>
@@ -70,28 +70,28 @@
                     <a class="catalog__links" href="#">Перейти к товару</a>
                 </div>
         </section>
-        <section class="catalog">
+        <section class="catalog wear">
             <div class="catalog__wrap">
                 <h2 class="catalog__title">ОДЕЖДА</h2>
                 <a class="catalog__link" href="#">ЕЩЁ</a>
             </div>
-                <div class="catalog__card">
-                    <img class="catalog__image" src="images/жакет.jpg" alt="Фото жакет" width="500">
-                    <h3 class="catalog__name">Жакеты</h3>
-                    <a class="catalog__link" href="#">СМОТРЕТЬ</a>
-                </div>
-                <div class="catalog__card">
-                    <img  class="catalog__image" src="images/юбкамакси.jpg" alt="Фото юбкамакси" width="500">
-                    <h3 class="catalog__name">Юбки</h3>
-                    <a class="catalog__link" href="#">СМОТРЕТЬ</a>
-                </div>
-                <div class="catalog__card">
-                    <img class="catalog__image" src="images/галстук.jpg" alt="Фото галстук" width="500">
-                    <h3 class="catalog__name">Костюмы</h3>
-                    <a class="catalog__link" href="#">СМОТРЕТЬ</a>
-                </div>
+            <div class="catalog__card">
+                <img class="catalog__image" src="images/жакет.jpg" alt="Фото жакет" width="500">
+                <h3 class="catalog__name">Название 1</h3>
+                <a class="catalog__link" href="#">СМОТРЕТЬ</a>
+            </div>
+            <div class="catalog__card">
+                <img  class="catalog__image" src="images/юбкамакси.jpg" alt="Фото юбкамакси" width="500">
+                <h3 class="catalog__name">Название 2</h3>
+                <a class="catalog__link" href="#">СМОТРЕТЬ</a>
+            </div>
+            <div class="catalog__card">
+                <img class="catalog__image" src="images/галстук.jpg" alt="Фото галстук" width="500">
+                <h3 class="catalog__name">Название 3</h3>
+                <a class="catalog__link" href="#">СМОТРЕТЬ</a>
+            </div> 
         </section>
-        <section class="catalog">
+        <section class="catalog shoes">
             <div class="catalog__wrap">
                 <h2 class="catalog__title">ОБУВЬ</h2>
                 <a class="catalog__link" href="#">ЕЩЁ</a>
@@ -152,14 +152,17 @@
                     <img class="about__image" src="images/онас.jpg" alt="О нас" width="5000" height="175">
                 </div>
         </section>
-        <section>
-            <form class="form" action="/">
-                <h1 class="form__title">Вход</h1>
-                <input class="form__input" type="tel" name="phone" placeholder="Номер телефона" required>
-                <input class="form__input" type="password" name="password" placeholder="Пароль" required>
-                <button class="form__button">Войти</button>
-            </form>
-        </section>
+        <div class="applications" hidden>
+            <section class="application"> 
+                <button class="application__close" type="button">⨉</button>
+                <form action="/" class="form">
+                    <h1 class="form__title">Вход</h1>
+                    <input class="form__input" type="tel" name="phone" placeholder="Номер телефона" required>
+                    <input class="form__input" type="password" name="password" placeholder="Пароль" required>
+                    <button class="form__button">Войти</button>
+                </form>
+            </section>
+        </div>
     </main>
     <footer class="footer container">
         <p class="family">Козлова К. А., Басова Д. А., Пермякова В. В. ЭК-31</p>
