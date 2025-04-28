@@ -12,3 +12,5 @@
 @import "main.css";
 /* Подключение адаптивности */
 @import "media.css";
+/* Подключение слайдера */
+@import "slider.css";

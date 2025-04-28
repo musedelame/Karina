@@ -2,7 +2,7 @@
     {
         "imageUrl": [
             "images/рубашка.jpg",
-            "images/платьешко.jpg"
+            "images/рубашка1.jpg"
         ],
         "imageAlt": "Рубашка",
         "imageWidth": 500,
@@ -12,24 +12,35 @@
     },
     {
         "imageUrl": [
-            "images/платьешко.jpg",
-            "images/юбка.jpg"
+            "images/платье.jpg",
+            "images/платье1.jpg"
         ],
         "imageAlt": "Платье",
         "imageWidth": 500,
-        "name": "Нежное платье миди",
-        "color": "молочный",
+        "name": "Платье миди из фактурной ткани с драпировкой на талии",
+        "color": "белый",
         "span": "7 999 ₽"
     },
     {
         "imageUrl": [
             "images/юбка.jpg",
-            "images/жакет.jpg"
+            "images/юбкамакси1.jpg"
         ],
         "imageAlt": "Юбка",
         "imageWidth": 500,
         "name": "Юбка длины макси из ткани с жатым эффектом",
         "color": "бежевый",
         "span": "5 499 ₽"
+    },
+    {
+        "imageUrl": [
+            "images/жилет.jpg",
+            "images/жилет 2.jpg"
+        ],
+        "imageAlt": "Жилет",
+        "imageWidth": 500,
+        "name": "Приталенный жилет с акцентными пуговицами",
+        "color": "белый",
+        "span": "7 499 ₽"
     }
 ]

@@ -69,9 +69,9 @@
                     <a class="catalog__links" href="#">Перейти к товару</a>
                 </div>
                 <div class="catalog__card">
-                    <img class="catalog__image" src="images/платьешко.jpg" alt="Фото платьешко" width="500">
-                    <h3 class="catalog__name">Нежное платье миди</h3>
-                    <p class="catalog__color">Цвет: молочный</p>
+                    <img class="catalog__image" src="images/платье.jpg" alt="Фото платье" width="500">
+                    <h3 class="catalog__name">Платье миди из фактурной ткани с драпировкой на талии</h3>
+                    <p class="catalog__color">Цвет: белый</p>
                     <span>7 999 ₽</span>
                     <button class="catalog__item" type="button">♡</button>
                     <a class="catalog__links" href="#">Перейти к товару</a>
@@ -81,6 +81,14 @@
                     <h3 class="catalog__name">Юбка длины макси из ткани с жатым эффектом</h3>
                     <p class="catalog__color">Цвет: бежевый</p>
                     <span>5 499 ₽</span>
+                    <button class="catalog__item" type="button">♡</button>
+                    <a class="catalog__links" href="#">Перейти к товару</a>
+                </div>
+                <div class="catalog__card">
+                    <img class="catalog__image" src="images/жилет.jpg" alt="Фото жилет" width="500">
+                    <h3 class="catalog__name">Приталенный жилет с акцентными пуговицами</h3>
+                    <p class="catalog__color">Цвет: белый</p>
+                    <span>7 499 ₽</span>
                     <button class="catalog__item" type="button">♡</button>
                     <a class="catalog__links" href="#">Перейти к товару</a>
                 </div> -->
@@ -127,32 +135,49 @@
                     <a class="catalog__link" href="#">СМОТРЕТЬ</a>
                 </div> -->
             </section>
-            <section class="catalog">
-                <div class="catalog__wrap">
+            <section class="catalog card card--slider swiper">
+                <div class="catalog__wrap card__list--slider swiper-wrapper">
                     <h2 class="catalog__title">АКСЕССУАРЫ</h2>
                     <a class="catalog__link" href="#">ЕЩЁ</a>
                 </div>
-                <div class="catalog__card">
+                <div class="catalog__card swiper-slide">
                     <img class="catalog__image" src="images/кулон.jpg" alt="Фото кулон" width="500">
                     <h3 class="catalog__name">Тонкая цепь с овальной подвеской</h3>
                     <span>1 599 ₽</span>
                     <button class="catalog__item" type="button">♡</button>
                     <a class="catalog__links" href="#">Перейти к товару</a>
                 </div>
-                <div class="catalog__card">
+                <div class="catalog__card swiper-slide">
                     <img class="catalog__image" src="images/заколка.jpg" alt="Фото заколка" width="500">
                     <h3 class="catalog__name">Бархатный бант для волос с заколкой из бусин</h3>
                     <span>1 299 ₽</span>
                     <button class="catalog__item" type="button">♡</button>
                     <a class="catalog__links" href="#">Перейти к товару</a>
                 </div>
-                <div class="catalog__card">
+                <div class="catalog__card swiper-slide">
                     <img class="catalog__image" src="images/браслет.jpg" alt="Фото браслет" width="500">
                     <h3 class="catalog__name">Круглый браслет из фактурного металла</h3>
                     <span>1 699 ₽</span>
                     <button class="catalog__item" type="button">♡</button>
                     <a class="catalog__links" href="#">Перейти к товару</a>
                 </div>
+                <div class="catalog__card swiper-slide">
+                    <img class="catalog__image" src="images/косынка.jpg" alt="Фото косынка" width="500">
+                    <h3 class="catalog__name">Косынка из гипюра</h3>
+                    <span>1 799 ₽</span>
+                    <button class="catalog__item" type="button">♡</button>
+                    <a class="catalog__links" href="#">Перейти к товару</a>
+                </div>
+                <div class="catalog__card swiper-slide">
+                    <img class="catalog__image" src="images/сумка.jpg" alt="Фото сумка" width="500">
+                    <h3 class="catalog__name">Прямоугольная сумка из матовой экокожи</h3>
+                    <span>5 999 ₽</span>
+                    <button class="catalog__item" type="button">♡</button>
+                    <a class="catalog__links" href="#">Перейти к товару</a>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </section>
             <section class="about">
                 <div class="about__wrap-left">
@@ -175,7 +200,7 @@
                     <button class="application__close" type="button">⨉</button>
                     <form action="/" class="form">
                         <h1 class="form__title">Вход</h1>
-                        <input class="form__input" type="tel" name="phone" placeholder="Номер телефона" required>
+                        <input class="form__input" type="tel" name="phone" placeholder="Email или телефон" required>
                         <input class="form__input" type="password" name="password" placeholder="Пароль" required>
                         <button class="form__button">Войти</button>
                     </form>
@@ -198,6 +223,7 @@
         </footer>
     </div>
     <script src="scripts/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 
 </html>
