@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,45 +8,59 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
 </head>
+
 <body>
-    <header class="header container">
-        <a class="header__logo-wrap" href="index.html">
-            <img class="header__logo" src="images/логотип.jpg" alt="Логотип" width="50">
-            <h1 class="header__title"> musedelame</h1>
-        </a>
-        <nav class="header__menu">
-            <ul class="menu">
-                <li class="menu__item menu__item--active">
-                    <a class="menu__link" href="index.html">Главная</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="#">Новинки</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href ="#">Одежда</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href ="#">Обувь</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href= "#">Аксессуары</a> 
-                </li>
-            </ul>
-        </nav>
-        <div class="header__buttons">
-            <button class="header__button button" type="button">ПОИСК</button>
-            <button class="header__button button welcome__button" type="button">ВОЙТИ</button>
-            <button class="header__button button" type="button">ИЗБРАННОЕ</button>
-            <button class="header__button button" type="button">КОРЗИНА</button>
+    <div class="preloader">
+        <div class="loader">
+            <span class="dot1"></span>
+            <span class="dot2"></span>
+            <span class="dot3"></span>
+            <span class="dot4"></span>
+            <span class="dot5"></span>
         </div>
-    </header> 
-    <main class="main container">
-        <section class="catalog">
-            <div class="catalog__wrap">
-                <h2 class="catalog__title">NEW COLLECTION</h2>
-                <a class="catalog__link" href="#">ЕЩЁ</a>
+    </div>
+    <div class="content">
+        <header class="header container">
+            <a class="header__logo-wrap" href="index.html">
+                <img class="header__logo" src="images/логотип.jpg" alt="Логотип" width="50">
+                <h1 class="header__title"> musedelame</h1>
+            </a>
+            <nav class="header__menu">
+                <ul class="menu">
+                    <li class="menu__item menu__item--active">
+                        <a class="menu__link" href="index.html">Главная</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Новинки</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Одежда</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Обувь</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Аксессуары</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__buttons">
+                <button class="header__button button" type="button">ПОИСК</button>
+                <button class="header__button button welcome__button" type="button">ВОЙТИ</button>
+                <button class="header__button button" type="button">ИЗБРАННОЕ</button>
+                <button class="header__button button" type="button">КОРЗИНА</button>
             </div>
-                <div class="catalog__card">
+        </header>
+        <main class="main container">
+            <section class="catalog new">
+                <div class="catalog__wrap">
+                    <h2 class="catalog__title">NEW COLLECTION</h2>
+                    <a class="catalog__link" href="#">ЕЩЁ</a>
+                </div>
+                <div class="catalog__list">
+
+                </div>
+                <!-- <div class="catalog__card">
                     <img class= "catalog__image" src="images/рубашка.jpg" alt="Фото рубашки" width="500">
                     <h3 class="catalog__name">Рубашка офисная</h3>
                     <p class="catalog__color">Цвет: белый</p>
@@ -68,34 +83,34 @@
                     <span>5 499 ₽</span>
                     <button class="catalog__item" type="button">♡</button>
                     <a class="catalog__links" href="#">Перейти к товару</a>
+                </div> -->
+            </section>
+            <section class="catalog wear">
+                <div class="catalog__wrap">
+                    <h2 class="catalog__title">ОДЕЖДА</h2>
+                    <a class="catalog__link" href="#">ЕЩЁ</a>
                 </div>
-        </section>
-        <section class="catalog wear">
-            <div class="catalog__wrap">
-                <h2 class="catalog__title">ОДЕЖДА</h2>
-                <a class="catalog__link" href="#">ЕЩЁ</a>
-            </div>
-            <div class="catalog__card">
-                <img class="catalog__image" src="images/жакет.jpg" alt="Фото жакет" width="500">
-                <h3 class="catalog__name">Название 1</h3>
-                <a class="catalog__link" href="#">СМОТРЕТЬ</a>
-            </div>
-            <div class="catalog__card">
-                <img  class="catalog__image" src="images/юбкамакси.jpg" alt="Фото юбкамакси" width="500">
-                <h3 class="catalog__name">Название 2</h3>
-                <a class="catalog__link" href="#">СМОТРЕТЬ</a>
-            </div>
-            <div class="catalog__card">
-                <img class="catalog__image" src="images/галстук.jpg" alt="Фото галстук" width="500">
-                <h3 class="catalog__name">Название 3</h3>
-                <a class="catalog__link" href="#">СМОТРЕТЬ</a>
-            </div> 
-        </section>
-        <section class="catalog shoes">
-            <div class="catalog__wrap">
-                <h2 class="catalog__title">ОБУВЬ</h2>
-                <a class="catalog__link" href="#">ЕЩЁ</a>
-            </div>
+                <div class="catalog__card">
+                    <img class="catalog__image" src="images/жакет.jpg" alt="Фото жакет" width="500">
+                    <h3 class="catalog__name">Название 1</h3>
+                    <a class="catalog__link" href="#">СМОТРЕТЬ</a>
+                </div>
+                <div class="catalog__card">
+                    <img class="catalog__image" src="images/юбкамакси.jpg" alt="Фото юбкамакси" width="500">
+                    <h3 class="catalog__name">Название 2</h3>
+                    <a class="catalog__link" href="#">СМОТРЕТЬ</a>
+                </div>
+                <div class="catalog__card">
+                    <img class="catalog__image" src="images/галстук.jpg" alt="Фото галстук" width="500">
+                    <h3 class="catalog__name">Название 3</h3>
+                    <a class="catalog__link" href="#">СМОТРЕТЬ</a>
+                </div>
+            </section>
+            <section class="catalog shoes">
+                <div class="catalog__wrap">
+                    <h2 class="catalog__title">ОБУВЬ</h2>
+                    <a class="catalog__link" href="#">ЕЩЁ</a>
+                </div>
                 <!-- <div class="catalog__card">
                     <img class="catalog__image" src="images/туфли.jpg" alt="Фото туфли" width="500">
                     <h3 class="catalog__name">Туфли</h3>
@@ -111,12 +126,12 @@
                     <h3 class="catalog__name">Босоножки</h3>
                     <a class="catalog__link" href="#">СМОТРЕТЬ</a>
                 </div> -->
-        </section>
-        <section class="catalog">
-            <div class="catalog__wrap">
-                <h2 class="catalog__title">АКСЕССУАРЫ</h2>
-                <a class="catalog__link" href="#">ЕЩЁ</a>
-            </div>
+            </section>
+            <section class="catalog">
+                <div class="catalog__wrap">
+                    <h2 class="catalog__title">АКСЕССУАРЫ</h2>
+                    <a class="catalog__link" href="#">ЕЩЁ</a>
+                </div>
                 <div class="catalog__card">
                     <img class="catalog__image" src="images/кулон.jpg" alt="Фото кулон" width="500">
                     <h3 class="catalog__name">Тонкая цепь с овальной подвеской</h3>
@@ -130,7 +145,7 @@
                     <span>1 299 ₽</span>
                     <button class="catalog__item" type="button">♡</button>
                     <a class="catalog__links" href="#">Перейти к товару</a>
-                </div>    
+                </div>
                 <div class="catalog__card">
                     <img class="catalog__image" src="images/браслет.jpg" alt="Фото браслет" width="500">
                     <h3 class="catalog__name">Круглый браслет из фактурного металла</h3>
@@ -138,46 +153,51 @@
                     <button class="catalog__item" type="button">♡</button>
                     <a class="catalog__links" href="#">Перейти к товару</a>
                 </div>
-        </section>
-        <section class="about">
-            <div class="about__wrap-left">
-                <h2 class="about__title"> О нас</h2>
-                <p> Наш интернет-магазин предлагает широкий ассортимент стильной и качественной одежды.
-                    Мы тщательно отбираем товары, чтобы вы могли найти именно то, что идеально подойдет вашему стилю и предпочтениям.
-                    В нашем магазине представлены коллекции от ведущих мировых брендов, а также уникальные модели от молодых дизайнеров.
-                    Мы следим за модными тенденциями и регулярно обновляем наш ассортимент, чтобы предложить вам самые актуальные новинки сезона. </p>
-                <a class="about__button" href="#">Перейти к покупкам</a>
-            </div>
+            </section>
+            <section class="about">
+                <div class="about__wrap-left">
+                    <h2 class="about__title"> О нас</h2>
+                    <p> Наш интернет-магазин предлагает широкий ассортимент стильной и качественной одежды.
+                        Мы тщательно отбираем товары, чтобы вы могли найти именно то, что идеально подойдет вашему стилю
+                        и предпочтениям.
+                        В нашем магазине представлены коллекции от ведущих мировых брендов, а также уникальные модели от
+                        молодых дизайнеров.
+                        Мы следим за модными тенденциями и регулярно обновляем наш ассортимент, чтобы предложить вам
+                        самые актуальные новинки сезона. </p>
+                    <a class="about__button" href="#">Перейти к покупкам</a>
+                </div>
                 <div class="about__wrap-right">
                     <img class="about__image" src="images/онас.jpg" alt="О нас" width="5000" height="175">
                 </div>
-        </section>
-        <div class="applications" hidden>
-            <section class="application"> 
-                <button class="application__close" type="button">⨉</button>
-                <form action="/" class="form">
-                    <h1 class="form__title">Вход</h1>
-                    <input class="form__input" type="tel" name="phone" placeholder="Номер телефона" required>
-                    <input class="form__input" type="password" name="password" placeholder="Пароль" required>
-                    <button class="form__button">Войти</button>
-                </form>
             </section>
-        </div>
-    </main>
-    <footer class="footer container">
-        <p class="family">Козлова К. А., Басова Д. А., Пермякова В. В. ЭК-31</p>
-        <ul class="document">
-            <li class="document__item">
-                <a class="document__link" href="#">Правовая оговорка</a>
-            </li>
-            <li class="document__item">
-                <a class="document__link" href="#">Пользовательское соглашение</a>
-            </li>
-            <li class="document__item">
-                <a class="document__link" href="#">Политика конфиденциальности</a>
-            </li>
-        </ul>
-    </footer>
+            <div class="applications" hidden>
+                <section class="application">
+                    <button class="application__close" type="button">⨉</button>
+                    <form action="/" class="form">
+                        <h1 class="form__title">Вход</h1>
+                        <input class="form__input" type="tel" name="phone" placeholder="Номер телефона" required>
+                        <input class="form__input" type="password" name="password" placeholder="Пароль" required>
+                        <button class="form__button">Войти</button>
+                    </form>
+                </section>
+            </div>
+        </main>
+        <footer class="footer container">
+            <p class="family">Козлова К. А., Басова Д. А., Пермякова В. В. ЭК-31</p>
+            <ul class="document">
+                <li class="document__item">
+                    <a class="document__link" href="#">Правовая оговорка</a>
+                </li>
+                <li class="document__item">
+                    <a class="document__link" href="#">Пользовательское соглашение</a>
+                </li>
+                <li class="document__item">
+                    <a class="document__link" href="#">Политика конфиденциальности</a>
+                </li>
+            </ul>
+        </footer>
+    </div>
     <script src="scripts/script.js"></script>
 </body>
+
 </html>

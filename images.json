@@ -1,0 +1,35 @@
+[
+    {
+        "imageUrl": [
+            "images/рубашка.jpg",
+            "images/платьешко.jpg"
+        ],
+        "imageAlt": "Рубашка",
+        "imageWidth": 500,
+        "name": "Рубашка офисная",
+        "color": "белый",
+        "span": "4 999 ₽"
+    },
+    {
+        "imageUrl": [
+            "images/платьешко.jpg",
+            "images/юбка.jpg"
+        ],
+        "imageAlt": "Платье",
+        "imageWidth": 500,
+        "name": "Нежное платье миди",
+        "color": "молочный",
+        "span": "7 999 ₽"
+    },
+    {
+        "imageUrl": [
+            "images/юбка.jpg",
+            "images/жакет.jpg"
+        ],
+        "imageAlt": "Юбка",
+        "imageWidth": 500,
+        "name": "Юбка длины макси из ткани с жатым эффектом",
+        "color": "бежевый",
+        "span": "5 499 ₽"
+    }
+]

@@ -114,7 +114,107 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
+    //Задание 6
+    //Объявляем переменную cardsImages и сохраняем в нее элементы секции catalog
+    const cardsImages = document.querySelector(".new");
+    //  проверяем существует ли элемент cardsImages, если он существует то переходим далее
+    if (cardsImages) {
+        //Объявляем переменную cardListImages и сохраняем в нее список с классом images__list, куда будут добавляться изображения
+        const cardListImages = cardsImages.querySelector(".catalog__list");
+        // Пример URL для получения данных с сервера (откуда загружаются данные)
+        const apiUrl = "images.json";
+        // Функция для создания карточки
+        // объявляем функцию, принимает 3 параметра catalog__imageUrl, catalog__imageAlt, catalog__imageWidth
+
+        const createCard = (imageUrl, imageAlt, imageWidth, name, color, span) => {
+            // создается переменная image, которая содержит HTML-код для карточки изображения. Внутри <li> (элемента списка) создаются два элемента <img>:
+            // 1) Первое изображение (imageUrl[0]) отображается по умолчанию.
+            //2) Второе изображение (imageUrl[1]) скрыто изначально с помощью стиля style="display: none;". Это изображение будет показано при клике.
+            const image = `
+            <div class="catalog__card">
+                <img class="catalog__picture" src="${imageUrl[0]}" alt="${imageAlt}" width="${imageWidth}">
+                    <img class="catalog__picture" src="${imageUrl[1]}" alt="${imageAlt}" width="${imageWidth}" style="display: none;">
+                <h3 class="catalog__name">${name}</h3>
+                <p class="catalog__color">Цвет: ${color}</p>
+                <span>${span}</span>
+                <button class="catalog__item" type="button">♡</button>
+                <a class="catalog__links" href="#">Перейти к товару</a>
+            </div>
+            `;
+            //возвращает строку image, которая содержит HTML-код для карточки изображения
+            return image;
+        };
+        // Запрос к серверу с помощью метода fetch
+        fetch(apiUrl)
+            // После того как запрос выполнен, возвращается объект Response, где вызывается метод json(), который преобразует ответ в формат JSON
+            .then((response) => response.json())
+            //получение данных 
+            .then((images) => {
+                console.log(images); // Вывод данных в консоль
+                console.log(typeof images); // Вывод в консоль Типа полученных данных
+
+                images.forEach((item) => {
+                    // создается переменная cardElement, где для каждого элемента массива вызывается функция createCard и передаются параметры
+                    const cardElement = createCard(
+                        item.imageUrl,
+                        item.imageAlt,
+                        item.imageWidth,
+                        item.name,
+                        item.color,
+                        item.span
+                    );
+                    // Добавление карточки на страницу в список cardListImages  с помощью метода insertAdjacentHTML beforeend указывает, что карточка должна быть добавлена в конец списка
+                    cardListImages.insertAdjacentHTML("beforeend", cardElement);
+                });
+                //СЮДА ВСТАВЬТЕ КОД ИЗ П 6. «Добавление обработчика событий для переключения изображений при клике на них»
+                //Объявляем переменную pictures и сохраняем в нее все изображения с классом images__picture 
+                const pictures = document.querySelectorAll(".catalog__picture");
+                if (pictures) {
+                    // Пройдемся по каждому элементу массива pictures, с помощью цикла forEach. 
+                    pictures.forEach((picture) => {
+                        //добавляем обработчик события клика по изображению:
+                        picture.addEventListener("click", () => {
+                            // получаем родительский элемент текущего изображения
+                            const parentItem = picture.parentElement;
+
+                            // Получаем все изображения в родительском элементе, для того чтобы работать только с изображениями, которые находятся в одной карточке
+                            const parentPictures =
+                                parentItem.querySelectorAll(".catalog__picture");
+
+                            // проходимся по всем изображениям, найденным в карточке
+                            parentPictures.forEach((parentPictures) => {
+                                //проверка условия если на текущее изображение не кликали, то оставляем это изображение видимым, иначе скрываем
+                                if (parentPictures !== picture) {
+                                    parentPictures.style.display = "block"; // Показываем другое изображение
+                                } else {
+                                    parentPictures.style.display = "none"; // Скрываем текущее изображение
+                                }
+                            });
+                        });
+                    });
+
+                }
+            })
+    }
+    //Объявляем переменную preloader и сохраняем в нее блок с классом .preloader
+    const preloader = document.querySelector(".preloader");
+    //Объявляем переменную content и сохраняем в нее блок с классом .content
+    const content = document.querySelector(".content");
+
+    //проверяем существуют ли эти блоки
+    if (preloader && content) {
+        // функция, которая позволяет выполнять код через определенный промежуток времени.
+        setTimeout(() => {
+            // Скрываем предзагрузчик
+            preloader.style.opacity = "0";
+            preloader.style.visibility = "hidden";
+
+            // и показываем контент
+            content.style.display = "block";
+
+            // Удаляем элемент предзагрузчика со страницы
+            preloader.remove();
+        }, 3000); // Задержка 3 секунды
+    }
 
 });
-
-
