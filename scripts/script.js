@@ -75,17 +75,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const cardsShoesData = {
             card1: {
-                src: "/images/туфли.jpg",
+                src: "images/туфли.jpg",
                 name: "Туфли",
                 href: "#"
             },
             card2: {
-                src: "/images/балетки.jpg",
+                src: "images/балетки.jpg",
                 name: "Балетки",
                 href: "#"
             },
             card3: {
-                src: "/images/босоножки.jpg",
+                src: "images/босоножки.jpg",
                 name: "Босоножки",
                 href: "#"
             },
@@ -95,9 +95,9 @@ document.addEventListener("DOMContentLoaded", () => {
             // Создаем переменную  card, которая будет содержать HTML-код карточки и вставляем туда 4 переменные
             const card = `
                     <div class="catalog__card">
-                        <img class="catalog__image">${src}</img>
-                        <h3 class="catalog__name>${name}</h3>
-                        <a class="catalog__link">${href}</a>
+                        <img class="catalog__image" src="${src}">
+                        <h3 class="catalog__name">${name}</h3>
+                        <a class="catalog__link" href=""${href}>СМОТРЕТЬ</a>
                     </div>
                 `;
             //  Возвращаем значение переменной card
