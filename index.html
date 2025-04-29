@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -136,48 +137,51 @@
                 </div> -->
             </section>
             <section class="catalog card card--slider swiper">
-                <div class="catalog__wrap card__list--slider swiper-wrapper">
+                <div class="catalog__wrap">
                     <h2 class="catalog__title">АКСЕССУАРЫ</h2>
                     <a class="catalog__link" href="#">ЕЩЁ</a>
                 </div>
-                <div class="catalog__card swiper-slide">
-                    <img class="catalog__image" src="images/кулон.jpg" alt="Фото кулон" width="500">
-                    <h3 class="catalog__name">Тонкая цепь с овальной подвеской</h3>
-                    <span>1 599 ₽</span>
-                    <button class="catalog__item" type="button">♡</button>
-                    <a class="catalog__links" href="#">Перейти к товару</a>
-                </div>
-                <div class="catalog__card swiper-slide">
-                    <img class="catalog__image" src="images/заколка.jpg" alt="Фото заколка" width="500">
-                    <h3 class="catalog__name">Бархатный бант для волос с заколкой из бусин</h3>
-                    <span>1 299 ₽</span>
-                    <button class="catalog__item" type="button">♡</button>
-                    <a class="catalog__links" href="#">Перейти к товару</a>
-                </div>
-                <div class="catalog__card swiper-slide">
-                    <img class="catalog__image" src="images/браслет.jpg" alt="Фото браслет" width="500">
-                    <h3 class="catalog__name">Круглый браслет из фактурного металла</h3>
-                    <span>1 699 ₽</span>
-                    <button class="catalog__item" type="button">♡</button>
-                    <a class="catalog__links" href="#">Перейти к товару</a>
-                </div>
-                <div class="catalog__card swiper-slide">
-                    <img class="catalog__image" src="images/косынка.jpg" alt="Фото косынка" width="500">
-                    <h3 class="catalog__name">Косынка из гипюра</h3>
-                    <span>1 799 ₽</span>
-                    <button class="catalog__item" type="button">♡</button>
-                    <a class="catalog__links" href="#">Перейти к товару</a>
-                </div>
-                <div class="catalog__card swiper-slide">
-                    <img class="catalog__image" src="images/сумка.jpg" alt="Фото сумка" width="500">
-                    <h3 class="catalog__name">Прямоугольная сумка из матовой экокожи</h3>
-                    <span>5 999 ₽</span>
-                    <button class="catalog__item" type="button">♡</button>
-                    <a class="catalog__links" href="#">Перейти к товару</a>
+                <div class="swiper-wrapper">
+                    <div class="catalog__card swiper-slide">
+                        <img class="catalog__image" src="images/кулон.jpg" alt="Фото кулон" width="500">
+                        <h3 class="catalog__name">Тонкая цепь с овальной подвеской</h3>
+                        <span>1 599 ₽</span>
+                        <button class="catalog__item" type="button">♡</button>
+                        <a class="catalog__links" href="#">Перейти к товару</a>
+                    </div>
+                    <div class="catalog__card swiper-slide">
+                        <img class="catalog__image" src="images/заколка.jpg" alt="Фото заколка" width="500">
+                        <h3 class="catalog__name">Бархатный бант для волос с заколкой из бусин</h3>
+                        <span>1 299 ₽</span>
+                        <button class="catalog__item" type="button">♡</button>
+                        <a class="catalog__links" href="#">Перейти к товару</a>
+                    </div>
+                    <div class="catalog__card swiper-slide">
+                        <img class="catalog__image" src="images/браслет.jpg" alt="Фото браслет" width="500">
+                        <h3 class="catalog__name">Круглый браслет из фактурного металла</h3>
+                        <span>1 699 ₽</span>
+                        <button class="catalog__item" type="button">♡</button>
+                        <a class="catalog__links" href="#">Перейти к товару</a>
+                    </div>
+                    <div class="catalog__card swiper-slide">
+                        <img class="catalog__image" src="images/косынка.jpg" alt="Фото косынка" width="500">
+                        <h3 class="catalog__name">Косынка из гипюра</h3>
+                        <span>1 799 ₽</span>
+                        <button class="catalog__item" type="button">♡</button>
+                        <a class="catalog__links" href="#">Перейти к товару</a>
+                    </div>
+                    <div class="catalog__card swiper-slide">
+                        <img class="catalog__image" src="images/сумка.jpg" alt="Фото сумка" width="500">
+                        <h3 class="catalog__name">Прямоугольная сумка из матовой экокожи</h3>
+                        <span>5 999 ₽</span>
+                        <button class="catalog__item" type="button">♡</button>
+                        <a class="catalog__links" href="#">Перейти к товару</a>
+                    </div>
                 </div>
                 <div class="swiper-pagination"></div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
+
             </section>
             <section class="about">
                 <div class="about__wrap-left">
@@ -222,8 +226,8 @@
             </ul>
         </footer>
     </div>
-    <script src="scripts/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
 
 </html>

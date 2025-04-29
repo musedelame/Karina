@@ -1,0 +1,22 @@
+.swiper-slide {
+    box-shadow: none;
+    border: none;
+}
+.swiper-button-prev,
+.swiper-button-next {
+    color: #575757;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background: #575757;
+    ;
+}
+
+.swiper-button-prev {
+    left: 0;
+}
+
+.swiper-button-next {
+    right: 0;
+}
